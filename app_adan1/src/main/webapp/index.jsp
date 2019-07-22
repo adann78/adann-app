@@ -34,7 +34,7 @@
                 ResultSet rs=null;
                 try{
                     Class.forName("com.mysql.jdbc.Driver");
-                    cnx=DriverManager.getConnection("jdbc:mysql://localhost/CursoJSP?user=root&password=");
+                    cnx=DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/HMDm6PvUzZ?user=HMDm6PvUzZ&password=28XiYDPVoC");
                     sta=cnx.createStatement();
                     rs=sta.executeQuery("select * from usuarios");
                     while (rs.next()){
